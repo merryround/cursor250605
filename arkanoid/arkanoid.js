@@ -236,20 +236,6 @@ document.addEventListener('keyup', (e) => {
     }
 });
 
-// 마우스/터치 이벤트
-canvas.addEventListener('mousemove', (e) => {
-    const relativeX = e.clientX - canvas.offsetLeft;
-    if (relativeX > 0 && relativeX < canvas.width) {
-        paddle.x = relativeX - paddle.width / 2;
-    }
-});
-
-canvas.addEventListener('click', () => {
-    if (!gameStarted) {
-        gameStarted = true;
-    }
-});
-
 // 시작 버튼
 startButton.addEventListener('click', () => {
     resetGame();
