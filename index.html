@@ -12,7 +12,7 @@
         }
 
         body {
-            background-color: #f0f0f0;
+            background-color: #e6f3ff;
             font-family: Arial, sans-serif;
             min-height: 100vh;
             display: flex;
@@ -21,9 +21,10 @@
         }
 
         h1 {
-            color: #333;
+            color: #2c5282;
             margin: 40px 0;
             text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
         }
 
         .games-container {
@@ -40,14 +41,15 @@
             padding: 20px;
             width: 200px;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(44, 82, 130, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             text-decoration: none;
             color: #333;
         }
 
         .game-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(44, 82, 130, 0.15);
         }
 
         .game-icon {
@@ -67,12 +69,12 @@
         .game-title {
             font-size: 1.2em;
             margin-bottom: 10px;
-            color: #333;
+            color: #2c5282;
         }
 
         .game-description {
             font-size: 0.9em;
-            color: #666;
+            color: #4a5568;
             line-height: 1.4;
         }
     </style>
