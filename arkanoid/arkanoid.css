@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #f0f0f0;
+    background-color: #e6f3ff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,7 @@ body {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(44, 82, 130, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,7 +36,7 @@ body {
 .score, .lives {
     font-size: 1.2em;
     font-weight: bold;
-    color: #333;
+    color: #2c5282;
     flex: 1;
 }
 
@@ -48,7 +48,7 @@ body {
     text-align: right;
 }
 
-#start-button {
+#start-button, .home-button {
     padding: 10px 20px;
     font-size: 1.1em;
     background-color: #4CAF50;
@@ -59,15 +59,27 @@ body {
     transition: background-color 0.3s;
     flex: 2;
     text-align: center;
+    text-decoration: none;
+}
+
+.home-button {
+    background-color: #2c5282;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
 }
 
 #start-button:hover {
     background-color: #45a049;
 }
 
+.home-button:hover {
+    background-color: #1a365d;
+}
+
 #gameCanvas {
     border: 2px solid #333;
-    background-color: #000;
+    background-color: #e0e0e0;  /* 좀 더 짙은 회색 배경 */
     display: block;
     margin: 0 auto;
 } 
