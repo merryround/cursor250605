@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>알카노이드 게임</title>
+    <title>알카노이드</title>
     <link rel="stylesheet" href="arkanoid.css">
 </head>
 <body>
     <div class="game-container">
         <div class="game-info">
             <div class="score">점수: <span id="score">0</span></div>
-            <button id="start-button">게임 시작</button>
             <div class="lives">생명: <span id="lives">3</span></div>
         </div>
-        <canvas id="gameCanvas" width="480" height="640"></canvas>
-        <a href="../index.html" class="home-button">메인으로 돌아가기</a>
+        <canvas id="gameCanvas" width="480" height="600"></canvas>
+        <div class="button-container">
+            <button id="start-button">게임 시작</button>
+            <a href="../index.html" class="home-button">메인으로</a>
+        </div>
     </div>
     <script src="arkanoid.js"></script>
 </body>

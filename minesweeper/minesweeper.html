@@ -10,7 +10,6 @@
     <div class="container">
         <div class="game-info">
             <div class="mines-count">남은 지뢰: <span id="mines">10</span></div>
-            <button id="start-button">새 게임</button>
             <div class="timer">시간: <span id="time">0</span></div>
         </div>
         <div id="board"></div>
@@ -19,7 +18,10 @@
             <button data-level="intermediate">중급</button>
             <button data-level="expert">고급</button>
         </div>
-        <a href="../index.html" class="home-button">메인으로 돌아가기</a>
+        <div class="button-container">
+            <button id="start-button">새 게임</button>
+            <a href="../index.html" class="home-button">메인으로</a>
+        </div>
     </div>
     <script src="minesweeper.js"></script>
 </body>

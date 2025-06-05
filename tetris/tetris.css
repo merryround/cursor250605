@@ -38,7 +38,6 @@ body {
 #start-button, .home-button {
     padding: 10px 20px;
     font-size: 1.1em;
-    background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
@@ -46,6 +45,25 @@ body {
     transition: background-color 0.3s;
     text-decoration: none;
     text-align: center;
+    width: 100%;
+}
+
+#start-button {
+    background-color: #4CAF50;
+    margin-top: auto;
+}
+
+.home-button {
+    background-color: #2c5282;
+    margin-top: 10px;
+}
+
+#start-button:hover {
+    background-color: #45a049;
+}
+
+.home-button:hover {
+    background-color: #1a365d;
 }
 
 #tetris {
@@ -63,27 +81,4 @@ body {
     margin-bottom: 10px;
     text-align: center;
     color: #2c5282;
-}
-
-.home-button {
-    background-color: #2c5282;
-    margin-top: auto;
-    display: block;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 1.1em;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    text-align: center;
-}
-
-.home-button:hover {
-    background-color: #1a365d;
-}
-
-#start-button:hover {
-    background-color: #45a049;
 } 
